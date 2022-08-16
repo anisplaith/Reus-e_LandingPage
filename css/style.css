@@ -1,42 +1,52 @@
 
+/*----Body e geral----*/
+
 *{
+
     margin: 0;
     font-family: 'Lato', sans-serif;
+
 }
 body{
+
     background-color: #f3f3f3;
     margin: 0;
+    max-width: 100%;
+
 }
 
 /*----Barra de navegação----*/
 
 header{
+
+    z-index: 3;
+    position: relative;
     width: 100%;
     height: 50px;
     display: flex;
-    justify-content: end;
-    /*border: solid 1px red;*/
-    
+    justify-content: end; 
     
 }
-a{ 
-    position: relative;
+a{  
+
     top: 10px;
     margin: 40px;
     padding: 10px;
     text-decoration: none;
     font-size: 24;
     color:#5C5D57;
-    /*border: solid 1px rgb(255, 0, 221);*/
 
 }
 nav{
+    
     margin-top: 10px;
 }
 
 .inicio-bar{
+
     color:#FF6B6B;
     font-weight: bold;
+
 }
 
 
@@ -48,23 +58,19 @@ main{
     flex-direction: row;
     align-items:flex-end;
     margin-top: 20px;
-    
+    position: absolute;
     width: 100%;
     height: 507px;
-    /*border: solid 2px violet;*/
-    
-    
-    
     
 }
 
 .conteudo-logo-botao{
+
     margin-bottom: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
    
-    *border: solid 2px #3d3c3c;
 }
 
 .logo{
@@ -76,22 +82,24 @@ main{
 }
 
 section{ 
-    /*padding: 25px;*/
-    /*border: solid 2px rgb(130, 238, 135);*/
+
     margin-left: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+
 }
 li{
-    color: #5C5D57;    ;
+
+    color: #5C5D57;  
     font-size: 20px;
     padding: 10px;
     font-weight: 500;
 
 }
 p{
+
     display: flex;
     align-items: center;  
     justify-content: center;
@@ -105,13 +113,15 @@ p{
 }
 
 h1{
-    /*border: solid 2px black;*/
+
     font-family: 'Anybody', cursive;
     color: #5C5D57;
     font-size: 30;
     padding: 15px;
+
 }
 button{
+
     display: flex;
     width: 179px;
     height: 40px;
@@ -125,13 +135,76 @@ button{
     font-size: 17px;
     font-weight: 600;
     background-color: #FF6B6B;
+
 }
 .side-image{
 
     display: flex;
-    /*border: solid 2px red;*/
     position: relative;
-    
-    height: 110%;
+    height: 105%;
+
 }
 
+/*----Hover----*/
+
+button:hover{
+
+    background-color: #4D96FF;
+    cursor: pointer;
+    font-size: 19px;
+    
+}
+.side-image:hover{
+    height: 112%;
+    transition: all .5s;
+}
+a:hover{
+    color: #4D96FF;
+}
+
+
+/*----Media Queries para que a landing page se adapte a diferentes tamanhos de tela----*/
+
+@media only screen and (max-width: 1120px){
+    main{
+
+        flex-direction: column;
+
+    }
+    a{
+
+        text-align: center;
+        max-width: 100%;
+        border:#4D96FF solid 1.5px;
+        border-radius: 20px;
+        top: 0px;
+        margin: 5px;
+        padding: 17px;
+
+    }
+    nav{
+
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+    }
+    header{
+
+        height: 250px;
+        max-width: 100%;
+
+    }
+   
+    .side-image{
+
+        height: 120%;
+        width: 120%;
+
+    }
+    
+
+    
+}
+
+/*---- FIM do projeto CSS :) ----*/
